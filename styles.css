@@ -1,0 +1,388 @@
+body {
+    font-family: "Montserrat" , serif;
+    text-align: center;
+    background-color: black;
+} 
+
+
+/* Headings */
+
+h1 , h2 , h3 , h4 , h5 , h6{
+    font-family: "Montserrat-Bold";
+} 
+
+
+/* Navigation Bar */
+
+.navbar {
+    padding: 0.;
+    background-color: #120F10;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: +1;
+}
+
+.navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding: 0 18px 0 18px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: "Montserrat-Light";
+    color: whitesmoke;
+}
+
+.container-fluid {
+    padding: 3% 15% 6% 15%;
+}
+
+.logo {
+    filter: brightness(0) invert(1);
+    width: 2.8rem;
+    position: relative;
+    left: 10rem;
+}
+
+.collapse {
+    position: relative;
+    right: 10rem;
+}
+
+
+/* Intro-page */
+
+#Home {
+    color: white;
+    text-align: left;
+    width: 100%;
+    padding-bottom: 0;
+}
+
+.into {
+    margin-top: 20px;
+}
+
+.info {
+    font-family: 'Protest Riot', sans-serif;
+    color: white;
+    text-align: left;
+    position: relative;
+    top: 90px;
+    left: 170px;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    z-index: -1;
+}
+
+.name {
+    color: red;
+}
+
+.title-image {
+    padding-top: 0;
+    width: 70%;
+    position: relative;
+    left: 733px;
+    bottom: 365px;
+    color: black;
+    z-index: -1;
+}
+ 
+.contact-button {  
+    margin: 5% 3% 5% 0;
+    display: inline-block;
+    background-color: red;
+    color: whitesmoke;
+    padding: 0.75rem 2.5rem;
+    font-weight: var(--font-semi);
+    border-radius: 0.5rem;
+    position: relative;
+    top: 80px;
+    left: 330px;
+}
+
+
+/* About */
+
+.head1 {
+    color: red;
+    font-family: "Montserrat" , serif;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    position: relative;
+    bottom: 220px;
+    left: 220px;
+}
+
+.about-image {
+    padding-bottom: 40px;
+    width: 10%;
+    position: relative;
+    left: 170px;
+    bottom: 190px;
+    z-index: -1;
+}
+
+.hello {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+ 
+.about-info {
+    color: white;
+    font-family: "Montserrat-Black" , sans-serif;
+    font-weight: bold;
+    text-align: left;
+    position: relative;
+    left: 40rem;
+    bottom: 590px;
+    width: 40%;
+}
+
+
+/* Skills */
+
+#Skills {
+    position: relative;
+    bottom: 12rem;
+}
+
+.row {
+    position: relative;
+    bottom: 12rem;
+}
+
+.head2 {
+    color: red;
+    font-family: "Montserrat" , serif;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    position: relative;
+    bottom: 220px;
+    left: 200px;
+}
+
+.name-left1 {
+    position: relative;
+    right: 225px;
+    text-align: left;
+    color: white;
+}
+
+.name-left2 {
+    position: relative;
+    right: 240px;
+    text-align: left;
+    color: white;
+}
+
+.name-left3 {
+    position: relative;
+    right: 200px;
+    text-align: left;
+    color: white;
+}
+
+.name-left4 {
+    position: relative;
+    right: 180px;
+    text-align: left;
+    color: white;
+}
+
+.name-left5 {
+    position: relative;
+    right: 220px;
+    text-align: left;
+    color: white;
+}
+
+.name-left6 {
+    position: relative;
+    right: 205px;
+    text-align: left;
+    color: white;
+}
+
+.name-left7 {
+    position: relative;
+    right: 210px;
+    text-align: left;
+    color: white;
+}
+
+.name-left8 {
+    position: relative;
+    right: 200px;
+    text-align: left;
+    color: white;
+}
+
+.value-right1 {
+    position: relative;
+    left: 230px;
+    text-align: right;
+    color: white;
+}
+
+.value-right2 {
+    position: relative;
+    left: 245px;
+    text-align: right;
+    color: white;
+}
+
+.value-right3 {
+    position: relative;
+    left: 205px;
+    text-align: right;
+    color: white;
+}
+
+.value-right4 {
+    position: relative;
+    left: 185px;
+    text-align: right;
+    color: white;
+}
+
+.value-right5 {
+    position: relative;
+    left: 220px;
+    text-align: right;
+    color: white;
+}
+
+.value-right6 {
+    position: relative;
+    left: 210px;
+    text-align: right;
+    color: white;
+}
+
+.value-right7 {
+    position: relative;
+    left: 215px;
+    text-align: right;
+    color: white;
+}
+
+.value-right8 {
+    position: relative;
+    left: 205px;
+    text-align: right;
+    color: white;
+}
+
+
+/* Resume */
+#Resume {
+    position: relative;
+    bottom: 220px;
+    right: 70px;
+}
+
+.resume-button {
+    margin: 5% 3% 5% 0;
+    display: inline-block;
+    background-color: red;
+    color: whitesmoke;
+    padding: 0.75rem 2.5rem;
+    font-weight: var(--font-semi);
+    border-radius: 0.5rem;
+    position: relative;
+    top: 80px;
+    left: 330px;
+}
+
+
+/* Contact */
+
+#Contact {
+    position: relative;
+    top: 120px;
+}
+
+.head3 {
+    color: red;
+    font-family: "Montserrat" , serif;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    position: relative;
+    bottom: 220px;
+    left: 220px;
+}
+
+.contact-text {
+    color: white;
+    font-family: "Montserrat-Black" , sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    position: relative;
+    left: 220px;
+    bottom: 180px;
+}
+
+.click-below {
+    position: relative;
+    left: 22rem;
+    bottom: 11rem;
+}
+
+.contactme-button {
+    margin: 5% 3% 5% 0;
+    display: inline-block;
+    background-color: red;
+    color: whitesmoke;
+    padding: 0.75rem 2.5rem;
+    font-weight: var(--font-semi);
+    border-radius: 0.5rem;
+    position: relative;
+    left: 3rem;
+    bottom: 2.5rem;
+}
+
+
+/* Footer */
+
+#footer {
+    padding: 3.5% 15%;
+    background-color: #120F10;
+}
+
+.footer_title {
+    padding: 0;
+    color: whitesmoke;
+    font-family: Arial, sans-serif;
+    font-size: 2.5rem;
+}
+
+.foot {
+    color: whitesmoke;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+}
+
+.social {
+    padding: 20px 20px 40px 20px;
+    color: white;
+}
+
+.social:hover {
+    color: red;
+}
+
+
+
+

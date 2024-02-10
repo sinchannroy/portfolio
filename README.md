@@ -5,7 +5,7 @@
 
 
 # Technical Specifications
-### Website -  
+### Website -  https://sinchannroy.github.io/portfolio/
 
 ### Languages - HTML, CSS, Javascript
 

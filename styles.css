@@ -215,14 +215,14 @@ h1 , h2 , h3 , h4 , h5 , h6{
 
 .name-left7 {
     position: relative;
-    right: 210px;
+    right: 175px;
     text-align: left;
     color: white;
 }
 
 .name-left8 {
     position: relative;
-    right: 200px;
+    right: 130px;
     text-align: left;
     color: white;
 }
@@ -264,21 +264,21 @@ h1 , h2 , h3 , h4 , h5 , h6{
 
 .value-right6 {
     position: relative;
-    left: 210px;
+    left: 205px;
     text-align: right;
     color: white;
 }
 
 .value-right7 {
     position: relative;
-    left: 215px;
+    left: 175px;
     text-align: right;
     color: white;
 }
 
 .value-right8 {
     position: relative;
-    left: 205px;
+    left: 130px;
     text-align: right;
     color: white;
 }

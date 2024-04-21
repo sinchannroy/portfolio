@@ -1,46 +1,20 @@
-body {
-    font-family: "Montserrat" , serif;
-    text-align: center;
-    background-color: black;
-} 
-
-
-/* Headings */
-
-h1 , h2 , h3 , h4 , h5 , h6{
-    font-family: "Montserrat-Bold";
-} 
-
-
-/* Navigation Bar */
-
-.navbar {
-    padding: 0.;
-    background-color: #120F10;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: +1;
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Tektur', cursive;
+  box-sizing: border-box;
 }
 
-.navbar-brand {
-    font-family: "Ubuntu";
-    font-size: 2.5rem;
-    font-weight: bold;
+body{
+  background: black;
+  color: #fff;
 }
 
-.nav-item {
-    padding: 0 18px 0 18px;
-}
-
-.nav-link {
-    font-size: 1.2rem;
-    font-family: "Montserrat-Light";
-    color: whitesmoke;
-}
-
-.container-fluid {
-    padding: 3% 15% 6% 15%;
+/**************  Navigation Bar  ***************/
+nav{
+  width: 100%;
+  background-color: black;
+  z-index: 10000;
 }
 
 .logo {
@@ -50,315 +24,292 @@ h1 , h2 , h3 , h4 , h5 , h6{
     left: 10rem;
 }
 
-.collapse {
-    position: relative;
-    right: 10rem;
+.header{
+  position: sticky;
+  top: 0;
+  display: flex;
+  z-index: 10000;
+}
+
+.sticky{
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+/**************  Intro ***************/
+.name{
+  margin-left: 20%;
+  margin-top: 2%;
+  color: red;
+}
+
+.name h2{
+  font-family: 'Merriweather', serif;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.fdev{
+  margin-top: 0px;
+}
+
+.header-text h1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.header-text h1 span{
+  color: red;
+  font-weight: bold;
 }
 
 
-/* Intro-page */
-
-#Home {
-    color: white;
-    text-align: left;
-    width: 100%;
-    padding-bottom: 0;
+/**************  About Me  ***************/
+.about{
+  color: #ababab;
 }
 
-.into {
-    margin-top: 20px;
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.info {
-    font-family: 'Protest Riot', sans-serif;
-    color: white;
-    text-align: left;
-    position: relative;
-    top: 90px;
-    left: 170px;
-    font-size: 3.5rem;
-    line-height: 1.5;
-    z-index: -1;
+.about-col-1{
+  flex-basis: 35%;
 }
 
-.name {
-    color: red;
+.about-col-1 img{
+  float: left;
+  width: 100%;
+  border-radius: 15px;
 }
 
-.title-image {
-    padding-top: 0;
-    width: 70%;
-    position: relative;
-    left: 733px;
-    bottom: 365px;
-    color: black;
-    z-index: -1;
-}
- 
-.contact-button {  
-    margin: 5% 3% 5% 0;
-    display: inline-block;
-    background-color: red;
-    color: whitesmoke;
-    padding: 0.75rem 2.5rem;
-    font-weight: var(--font-semi);
-    border-radius: 0.5rem;
-    position: relative;
-    top: 80px;
-    left: 330px;
+.about-col-2{
+  flex-basis: 60%;
 }
 
-
-/* About */
-
-.head1 {
-    color: red;
-    font-family: "Montserrat" , serif;
-    text-align: center;
-    font-weight: bold;
-    text-decoration: underline;
-    position: relative;
-    bottom: 220px;
-    left: 220px;
+.exo-2-font{
+  font-family: 'Exo 2', sans-serif;
+  font-size: 20px;
+  color: #E5D1FA;
 }
 
-.about-image {
-    padding-bottom: 40px;
-    width: 10%;
-    position: relative;
-    left: 170px;
-    bottom: 190px;
-    z-index: -1;
+.exo-2-font:hover{
+
 }
 
-.hello {
-    font-weight: bold;
-    padding-bottom: 10px;
-}
- 
-.about-info {
-    color: white;
-    font-family: "Montserrat-Black" , sans-serif;
-    font-weight: bold;
-    text-align: left;
-    position: relative;
-    left: 40rem;
-    bottom: 590px;
-    width: 40%;
+.about-col-2 h1{
+  transition: transform 0.5s;
 }
 
-
-/* Skills */
-
-#Skills {
-    position: relative;
-    bottom: 12rem;
+.about-col-2 h1:hover{
+  color: red;
+  transform: translateY(-5px);
 }
 
-.row {
-    position: relative;
-    bottom: 12rem;
+.subtitle{
+  font-family: 'Tektur', cursive;
+  font-size: 50px;
+  font-weight: 400;
+  color: red;
 }
 
-.head2 {
-    color: red;
-    font-family: "Montserrat" , serif;
-    text-align: center;
-    font-weight: bold;
-    text-decoration: underline;
-    position: relative;
-    bottom: 220px;
-    left: 200px;
+.tab-titles{
+ display: flex;
+ margin: 20px 0 40px;
 }
 
-.name-left1 {
-    position: relative;
-    right: 225px;
-    text-align: left;
-    color: white;
+.tab-links{
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+  position: relative;
 }
 
-.name-left2 {
-    position: relative;
-    right: 240px;
-    text-align: left;
-    color: white;
+.tab-links::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: red;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
 }
 
-.name-left3 {
-    position: relative;
-    right: 200px;
-    text-align: left;
-    color: white;
+.tab-links.active-link::after{
+  width: 50%;
 }
 
-.name-left4 {
-    position: relative;
-    right: 180px;
-    text-align: left;
-    color: white;
+.tab-contents ul{
+    padding-left: 0px;
 }
 
-.name-left5 {
-    position: relative;
-    right: 220px;
-    text-align: left;
-    color: white;
+.tab-contents ul li{
+  list-style: none;
+  margin: 10px 0;
 }
 
-.name-left6 {
-    position: relative;
-    right: 205px;
-    text-align: left;
-    color: white;
+.tab-contents ul li span{
+  color: #b54769;
+  font-size: 18px;
 }
 
-.name-left7 {
-    position: relative;
-    right: 175px;
-    text-align: left;
-    color: white;
+.tab-contents{
+  font-family: 'Exo 2', sans-serif;
+  font-size: 14px;
+  color: #E5D1FA;
+  display: none;
 }
 
-.name-left8 {
-    position: relative;
-    right: 130px;
-    text-align: left;
-    color: white;
-}
-
-.value-right1 {
-    position: relative;
-    left: 230px;
-    text-align: right;
-    color: white;
-}
-
-.value-right2 {
-    position: relative;
-    left: 245px;
-    text-align: right;
-    color: white;
-}
-
-.value-right3 {
-    position: relative;
-    left: 205px;
-    text-align: right;
-    color: white;
-}
-
-.value-right4 {
-    position: relative;
-    left: 185px;
-    text-align: right;
-    color: white;
-}
-
-.value-right5 {
-    position: relative;
-    left: 220px;
-    text-align: right;
-    color: white;
-}
-
-.value-right6 {
-    position: relative;
-    left: 205px;
-    text-align: right;
-    color: white;
-}
-
-.value-right7 {
-    position: relative;
-    left: 175px;
-    text-align: right;
-    color: white;
-}
-
-.value-right8 {
-    position: relative;
-    left: 130px;
-    text-align: right;
-    color: white;
+.tab-contents.active-tabs{
+  display: block;
 }
 
 
-/* Resume */
-#Resume {
-    position: relative;
-    bottom: 220px;
-    right: 70px;
+/******************* Portfolio ******************/
+#portfolio{
+  padding: 30px 0;
+  z-index: 1;
 }
 
-.resume-button {
-    margin: 5% 3% 5% 0;
-    display: inline-block;
-    background-color: red;
-    color: whitesmoke;
-    padding: 0.75rem 2.5rem;
-    font-weight: var(--font-semi);
-    border-radius: 0.5rem;
-    position: relative;
-    top: 80px;
-    left: 330px;
+.work-list{
+    font-family: 'Tektur', cursive;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 40px;
+  margin-top: 40px;
 }
 
-
-/* Contact */
-
-#Contact {
-    position: relative;
-    top: 120px;
+.work-list div:hover{
+  background: red;
+  transform: translateY(-10px);
 }
 
-.head3 {
-    color: red;
-    font-family: "Montserrat" , serif;
-    text-align: center;
-    font-weight: bold;
-    text-decoration: underline;
-    position: relative;
-    bottom: 220px;
-    left: 220px;
+.work{
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
 }
 
-.contact-text {
-    color: white;
-    font-family: "Montserrat-Black" , sans-serif;
-    font-weight: bold;
-    font-size: 1.5rem;
-    text-align: center;
-    position: relative;
-    left: 220px;
-    bottom: 180px;
+.work div{
+  background: #262626;
+  padding: 40px;
+  font-size: 14px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s,transform 0.5s;
 }
 
-.click-below {
-    position: relative;
-    left: 22rem;
-    bottom: 11rem;
+.work:hover img{
+  transform: scale(1.1);
 }
 
-.contactme-button {
-    margin: 5% 3% 5% 0;
-    display: inline-block;
-    background-color: red;
-    color: whitesmoke;
-    padding: 0.75rem 2.5rem;
-    font-weight: var(--font-semi);
-    border-radius: 0.5rem;
-    position: relative;
-    left: 3rem;
-    bottom: 2.5rem;
+.work:hover .layer{
+  height: 100%;
+}
+
+.btn{
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid red;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  transition: background 0.5s;
+}
+
+.btn:hover{
+  background: red;
 }
 
 
-/* Footer */
+/******************* Contact ****************/
+.contact-leftside{
+  flex-basis: 35%;
+}
 
-#footer {
+.contact-rightside{
+  margin-top: 70px;
+  flex-basis: 60%;
+}
+
+.contact-leftside h1{
+  margin-bottom: 20px;
+  transition: transform 0.5s;
+}
+
+.contact-leftside h1:hover{
+  color: red;
+  transform: translateY(-5px);
+}
+
+.contact-leftside p i{
+  color: red;
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+.contact-leftside a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.social-media a{
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.social-media a:hover{
+  color: red;
+  transform: translateY(-5px);
+}
+
+.resbtn{
+  display: inline-block;
+  color: red;
+}
+
+.contact-rightside form{
+  width: 100%;
+}
+
+form input,form textarea{
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+form .resbtn{
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.copyright{
     padding: 3.5% 15%;
     background-color: #120F10;
+    width: 100%;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 20px;
 }
 
 .footer_title {
@@ -374,15 +325,219 @@ h1 , h2 , h3 , h4 , h5 , h6{
     font-size: 1rem;
 }
 
-.social {
-    padding: 20px 20px 40px 20px;
-    color: white;
+
+/************** Media Queries ******************/
+@media only screen and (max-width: 990px) {
+  .subtitle{
+    font-family: 'Tektur', cursive;
+    font-size: 55px;
+  }
+  .header{
+    height: 13%;
+    display: block;
+  }
+  .about-col-1,.about-col-2{
+    flex-basis: 100%;
+    margin-top: auto;
+  }
+  .about-col-1{
+    margin-bottom: 30px;
+  }
+  .about-col-2{
+    font-size: 28px;
+  }
+  .exo-2-font{
+    font-size: 28px;
+  }
+  .tab-links{
+    font-size: 28px;
+    margin-right: 20px;
+  }
+  .tab-contents{
+    font-size: 28px;
+  }
+  .tab-contents li span{
+    font-size: 28px;
+  }
+  .contact-leftside,.contact-rightside{
+    flex-basis: 100%;
+  }
+  .copyright{
+    font-size: 14px;
+  }
+  .med-size{
+    font-size: 23px;
+  }
+
+  .header-text{
+    z-index: -1;
+  }
+  .waviy{
+    z-index: -1;
+  }
+  .about-col-1{
+    z-index: 1;
+  }
+  .progress{
+    height: 6px;
+  }
+
 }
 
-.social:hover {
-    color: red;
+#msg{
+  color: #61b752;
+  margin-top: -40px;
+  display: block;
 }
 
+button#moveToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #000;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid red;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s, background 0.5s;
+  z-index: 10000000;
+}
+
+button#moveToTopBtn.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+button#moveToTopBtn:hover{
+  background: red;
+}
+
+
+/******** Progress Bar *********/
+.progress {
+  position: absolute;
+  z-index: 100000;
+  height: 4px;
+  width: 0%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation: progress 1s linear;
+}
+
+@keyframes progress {
+  to {
+    background-color: red;
+    width: 100%;
+  }
+}
+
+:root * {
+  /* Pause the animation */
+  animation-play-state: paused;
+  /* Bind the animation to scroll */
+  animation-delay: calc(var(--scroll) * -1s);
+  /* These last 2 properites clean up overshoot weirdness */
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+
+/*********** Flip Wavy Animation ************/
+.waviy{
+  margin-top: 4%;
+  margin-bottom: 10%;
+  margin-left: 20%;
+  z-index: 0;
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 60px;
+}
+
+.waviy span {
+    font-family: 'Tektur', cursive;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+}
+
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+
+.word {
+  margin-left: 20%;
+  color: #5C469C;
+  font-family: 'Oxygen' , sans-serif;
+  text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+}
+
+
+/************* Shine Effect **************/
+.effect-shine:hover {
+  -webkit-mask-image: linear-gradient(-75deg, rgba(255,0,79,.6) 30%, #000 50%, rgba(255,0,79,.6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 2s infinite;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
+
+/************* Animation Effect ************/
+.animate-me{
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-me span{
+  opacity: 0;
+  filter: blur(4px);
+}
+
+.animate-me span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.animate-me span:nth-child(2) {
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
 
 
 

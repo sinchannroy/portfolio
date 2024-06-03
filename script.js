@@ -7,6 +7,7 @@ window.addEventListener('scroll', function() {
   if (window.scrollY > 1) {
     header.classList.add('sticky');
   }
+  
   else {
     header.classList.remove('sticky');
   }
@@ -20,9 +21,11 @@ function opentab(tabname){
   for(tablink of tablinks){
     tablink.classList.remove("active-link");
   }
+
   for(tabcontent of tabcontents){
     tabcontent.classList.remove("active-tabs");
   }
+
   event.currentTarget.classList.add("active-link");
   document.getElementById(tabname).classList.add("active-tabs");
 }
@@ -42,7 +45,8 @@ form.addEventListener('submit', e => {
       form.reset();
     })
     .catch(error => console.error('Error!', error.message))
-})
+    
+});
 
 
 const moveToTopBtn = document.getElementById('moveToTopBtn');
@@ -50,7 +54,9 @@ const moveToTopBtn = document.getElementById('moveToTopBtn');
 function handleScroll() {
   if (document.documentElement.scrollTop > 300) {
     moveToTopBtn.classList.add('show');
-  } else {
+  } 
+  
+  else {
     moveToTopBtn.classList.remove('show');
   }
 }

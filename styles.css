@@ -10,7 +10,7 @@ body{
   color: #fff;
 }
 
-/**************  Navigation Bar  ***************/
+/**************  Navigation Bar Page ***************/
 nav{
   width: 100%;
   background-color: black;
@@ -18,10 +18,10 @@ nav{
 }
 
 .logo {
-    filter: brightness(0) invert(1);
-    width: 2.8rem;
-    position: relative;
-    left: 10rem;
+  filter: brightness(0) invert(1);
+  width: 2.8rem;
+  position: relative;
+  left: 10rem;
 }
 
 .header{
@@ -37,7 +37,7 @@ nav{
   top: 0;
 }
 
-/**************  Intro ***************/
+/**************  Home Page ***************/
 .name{
   margin-left: 20%;
   margin-top: 2%;
@@ -66,7 +66,7 @@ nav{
 }
 
 
-/**************  About Me  ***************/
+/**************  About Me Page ***************/
 .about{
   color: #ababab;
 }
@@ -95,10 +95,6 @@ nav{
   font-family: 'Exo 2', sans-serif;
   font-size: 20px;
   color: #E5D1FA;
-}
-
-.exo-2-font:hover{
-
 }
 
 .about-col-2 h1{
@@ -146,7 +142,7 @@ nav{
 }
 
 .tab-contents ul{
-    padding-left: 0px;
+  padding-left: 0px;
 }
 
 .tab-contents ul li{
@@ -171,14 +167,14 @@ nav{
 }
 
 
-/******************* Portfolio ******************/
+/******************* Projects Page ******************/
 #portfolio{
   padding: 30px 0;
   z-index: 1;
 }
 
 .work-list{
-    font-family: 'Tektur', cursive;
+  font-family: 'Tektur', cursive;
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
   grid-gap: 40px;
@@ -230,7 +226,7 @@ nav{
 }
 
 
-/******************* Contact ****************/
+/******************* Contact Me Page****************/
 .contact-leftside{
   flex-basis: 35%;
 }
@@ -304,25 +300,25 @@ form .resbtn{
 }
 
 .copyright{
-    padding: 3.5% 15%;
-    background-color: #120F10;
-    width: 100%;
-    text-align: center;
-    font-weight: 300;
-    margin-top: 20px;
+  padding: 3.5% 15%;
+  background-color: #120F10;
+  width: 100%;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 20px;
 }
 
 .footer_title {
-    padding: 0;
-    color: whitesmoke;
-    font-family: Arial, sans-serif;
-    font-size: 2.5rem;
+  padding: 0;
+  color: whitesmoke;
+  font-family: Arial, sans-serif;
+  font-size: 2.5rem;
 }
 
 .foot {
-    color: whitesmoke;
-    font-family: Arial, sans-serif;
-    font-size: 1rem;
+  color: whitesmoke;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
 }
 
 
@@ -332,39 +328,50 @@ form .resbtn{
     font-family: 'Tektur', cursive;
     font-size: 55px;
   }
+
   .header{
     height: 13%;
     display: block;
   }
+
   .about-col-1,.about-col-2{
     flex-basis: 100%;
     margin-top: auto;
   }
+
   .about-col-1{
     margin-bottom: 30px;
   }
+
   .about-col-2{
     font-size: 28px;
   }
+
   .exo-2-font{
     font-size: 28px;
   }
+
   .tab-links{
     font-size: 28px;
     margin-right: 20px;
   }
+
   .tab-contents{
     font-size: 28px;
   }
+
   .tab-contents li span{
     font-size: 28px;
   }
+
   .contact-leftside,.contact-rightside{
     flex-basis: 100%;
   }
+
   .copyright{
     font-size: 14px;
   }
+
   .med-size{
     font-size: 23px;
   }
@@ -372,12 +379,15 @@ form .resbtn{
   .header-text{
     z-index: -1;
   }
+
   .waviy{
     z-index: -1;
   }
+
   .about-col-1{
     z-index: 1;
   }
+
   .progress{
     height: 6px;
   }
@@ -462,14 +472,14 @@ button#moveToTopBtn:hover{
 }
 
 .waviy span {
-    font-family: 'Tektur', cursive;
-    font-weight: 600;
-    position: relative;
-    display: inline-block;
-    color: #fff;
-    text-transform: uppercase;
-    animation: waviy 1s infinite;
-    animation-delay: calc(.1s * var(--i));
+  font-family: 'Tektur', cursive;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
 }
 
 @keyframes waviy {

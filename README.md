@@ -5,4 +5,4 @@ This is a front-end development project which is created to promote my skills in
 
 # Technologies Used
 - Languages: HTML, CSS, Javascript
-- Library - jQuery
+- Library - Bootstrap

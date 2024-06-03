@@ -14,16 +14,19 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
       crossorigin="anonymous"
     ></script>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
       crossorigin="anonymous"
     ></script>
+
     <script
       src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
@@ -35,6 +38,7 @@
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
       crossorigin="anonymous"
     ></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
       integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
@@ -48,14 +52,17 @@
       href="https://fonts.googleapis.com/css2?family=Tektur:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    
     <link
       href="https://fonts.googleapis.com/css2?family=Lugrasimo&family=Merriweather:wght@900&display=swap"
       rel="stylesheet"
     />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Oxygen&family=Poppins:wght@300;400&family=Source+Code+Pro&family=Ubuntu:wght@300;400&display=swap"
       rel="stylesheet"
     />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,300&display=swap"
       rel="stylesheet"
@@ -73,7 +80,7 @@
 
   <body>
     <div class="header" id="header">
-        <!-- Navigation Bar -->
+      <!-- Navigation Bar Page-->
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
           <a class="navbar-brand effect-shine" href=""><img class="logo" src="images/logo.png"/></a>
@@ -108,7 +115,7 @@
       </div>
     </div>
 
-    <!-- Intro Page -->
+    <!-- Home Page -->
     <div class="name">
       <h2>Hi, I am</h2>
     </div>
@@ -124,94 +131,108 @@
     
     <div class="progress"></div>
 
-    <!-- About Me -->
+    <!-- About Page -->
     <div class="about" id="about">
       <div class="container">
         <div class="row right">
           <div class="about-col-1 right">
-            <img src="images/selfie.png" alt="use" />
+            <img src="images/selfie.jpg" alt="use" />
           </div>
           <div class="about-col-2 left">
             <h1 class="subtitle"><span>About</span> <span>Me</span></h1>
             <p class="exo-2-font">
-                I am a dedicated third-year software engineering student hailing from Delhi, India. 
-                My enthusiasm for software engineering extends across diverse domains, including 
-                web development and have even started diving into the domain of machine learning. 
+              Greetings! I'm Sinchan, a senior at <em>Delhi Technological University (DTU)</em>, set to 
+              graduate in 2025. Throughout my academic journey, I've explored a wide range of subjects 
+              including <em>Data Structures & Algorithms, Object-Oriented Programming, Database Management 
+              Systems, Operating Systems Design, Computer Networks, MERN Stack Web Development, and Machine 
+              Learning</em> , all with a strong focus on software development. My passion for coding and 
+              solving new challenges has driven me to excel in these areas, showcasing my adaptability to 
+              diverse projects and my enthusiasm for learning cutting-edge technologies. 
             </p>
             <p class="exo-2-font">
-                I derive immense joy from coding and tackling novel challenges, showcasing a 
-                high level of adaptability to new projects. The dynamic nature of technology never 
-                fails to captivate me, as I am consistently awed by its transformative influence 
-                on the world.
+              As a dedicated engineering student from Delhi, India, my excitement for <em>software 
+              engineering</em> spans across various domains, particularly <em>web development and machine 
+              learning</em>. The dynamic and ever-evolving nature of technology continues to captivate me, 
+              inspiring me to contribute to its transformative impact on the world. I am constantly in 
+              awe of how technology shapes our lives, and I am committed to being at the forefront of 
+              this change, bringing innovative solutions and a fresh perspective to every project I 
+              undertake.
+            </p>
             <div class="tab-titles">
               <p class="tab-links active-link" onclick="opentab('skills')">
                 Skills
               </p>
-              <p class="tab-links" onclick="opentab('experience')">
+              <p class="tab-links" onclick="opentab('languages')">
                 Languages
               </p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">
+                Education
+              </p>
             </div>
 
             <div class="tab-contents active-tabs" id="skills">
               <ul>
                 <li>
-                    <span>Machine Learning</span><br />
-                    Crafting Intelligent Solutions through Data with Machine Learning.
+                  <span>Machine Learning</span><br />
+                  Crafting Intelligent Solutions through Data with Machine Learning.
                 </li>
                 <li>
-                    <span>MERN Stack Web Development</span><br />
-                    Crafting Dynamic Web Applications with the MERN Stack: 
-                    Harnessing MongoDB, Express.js, React, and Node.js to build modern, 
-                    scalable web solutions.
+                  <span>MERN Stack Web Development</span><br />
+                  Crafting Dynamic Web Applications with the MERN Stack: 
+                  Harnessing MongoDB, Express.js, React, and Node.js to build modern, 
+                  scalable web solutions.
                 </li>
                 <li>
-                    <span>Data Engineering</span><br />
-                    Building Database Management Systems: Harnessing the Power of 
-                    SQL to Engineer Scalable and Efficient Data Flows.
+                  <span>Data Engineering</span><br />
+                  Building Database Management Systems: Harnessing the Power of 
+                  SQL to Engineer Scalable and Efficient Data Flows.
                 </li>
                 <li>
-                    <span>Data Structures and Algorithms</span><br />
-                    Mastered Data Structures and Algorithms: Harness the Power of C, C++, 
-                    and Python for Efficient Problem Solving.
-                  </li>
+                  <span>Data Structures and Algorithms</span><br />
+                  Mastered Data Structures and Algorithms: Harness the Power of C, C++, 
+                  and Python for Efficient Problem Solving.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="languages">
+              <ul>
+                <li>Python</li>
+                <li>C language</li>
+                <li>C++</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>SQL</li>
+                <li>HTML</li>
+                <li>CSS</li>
               </ul>
             </div>
 
             <div class="tab-contents" id="experience">
               <ul>
                 <li>
-                    <span>Python</span>
+                  <span>Software Development Engineer Intern | Unified Mentor Private Limited</span><br />
+                  Jun 2024 - Present | Gurugram, Haryana, India
                 </li>
                 <li>
-                    <span>C language</span>
+                  <span>Software Development Extern | Expedia Group</span><br />
+                  Jun 2024 - Jul 2024 | Remote
                 </li>
-                <li>
-                    <span>C++</span>
-                </li>
-                <li>
-                    <span>JavaScript</span>
-                </li>
-                <li>
-                    <span>SQL</span>
-                </li>
-                <li>
-                    <span>HTML</span>
-                </li>
-                <li>
-                    <span>CSS</span>
-                </li>
+              </ul>
             </div>
 
             <div class="tab-contents" id="education">
               <ul>
                 <li>
-                    <span>Jul 2021 - Jun 2025</span><br />
-                    Persuing Bachelor of Technology from Delhi Technological University
+                  <span>Bachelors of Technology (BTech) [ECE Major + CSE Minor]</span><br />
+                  <strong>Delhi Technological University (DTU)</strong> | Jul 2021 - Jun 2025
                 </li>
                 <li>
-                    <span>Apr 2016 - Jul 2020</span><br />
-                    High School from Oxford Senior Secondary School
+                  <span>High School</span><br />
+                  <strong>Oxford Senior Secondary School</strong> | Apr 2016 - Jul 2020
                 </li>
               </ul>
             </div>
@@ -220,19 +241,54 @@
       </div>
     </div>
 
-    <!-- Portfolio -->
+    <!-- Projects Page -->
     <div id="portfolio">
       <div class="container hov-effect">
-        <h1 class="subtitle">My Work</h1>
+        <h1 class="subtitle"><span>My</span> <span>Work</span></h1>
         <div class="work-list">
+          <div class="work">
+            <div class="layer">
+              <h3>TransitTrack</h3>
+              <p class="med-size">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+              </p>
+              <a
+                href=" "
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-solid fa-arrow-up-right-from-square fa-2x"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <div class="layer">
+              <h3>BlogSphere</h3>
+              <p class="med-size">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+              </p>
+              <a
+                href=" "
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-solid fa-arrow-up-right-from-square fa-2x"></i
+              ></a>
+            </div>
+          </div>
           <div class="work">
             <div class="layer">
               <h3>ScreenWise</h3>
               <p class="med-size">
-                Conceptualized an ML-powered resume screening system by implementing an 
-                AI-powered resume analysis tool that reduced manual screening time improving
-                hirirng efficiency.
+                Conceptualized an AI-powered resume screening system by implementing Machine Learning that 
+                reduced manual screening time improving hirirng efficiency.
               </p>
+              <a
+                href=" "
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-solid fa-arrow-up-right-from-square fa-2x"></i
+              ></a>
             </div>
           </div>
           <div class="work">
@@ -265,18 +321,37 @@
               ></a>
             </div>
           </div>
+          <div class="work">
+            <div class="layer">
+              <h3>Portfolio</h3>
+              <p class="med-size">
+                Designed and developed my portfolio website using HTML, CSS, and JavaScript 
+                to showcase my professional and academic expertise.
+              </p>
+              <a
+                href="https://sinchannroy.github.io/portfolio/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-solid fa-arrow-up-right-from-square fa-2x"></i
+              ></a>
+            </div>
+          </div>
         </div>
+
+        <!-- Resume Button -->
         <a
           href="https://drive.google.com/drive/folders/1HSPfM61FyhozpgHC0srzdASRzcjZxKDo"
           target="_blank"
           rel="noopener noreferrer"
-          class="btn"
-          >Resume</a
-        >
+          class="btn">
+          Resume
+        </a>
       </div>
     </div>
 
-    <!-- Contact Me -->
+    <!-- Start from here only this html part plus form javascript functionality needs to be worked -->
+    <!-- Rest done -->
+    <!-- Contact Me Page -->
     <div id="contact">
       <div class="container">
         <div class="row">
@@ -342,9 +417,11 @@
           </div>
         </div>
       </div>
+
+      <!-- Move to Top Button -->
       <button id="moveToTopBtn" onclick="scrollToTop()">Move to Top</button>
 
-        <!-- Footer -->
+      <!-- Footer -->
       <div class="copyright">
         <p class="footer_title">Sinchan Roy!</p>
         <p class="foot">

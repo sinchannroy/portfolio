@@ -30,24 +30,22 @@ function opentab(tabname){
   document.getElementById(tabname).classList.add("active-tabs");
 }
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbyLiLCMXJFVSGWZzk0EgAgYq2AzquAZojYVGDbpOwHmCw0kVMiZ2ZTK7uvIkMFdmyfQMQ/exec'
-const form = document.forms['submit-to-google-sheet']
-const msg = document.getElementById("msg");
-
-form.addEventListener('submit', e => {
-  e.preventDefault()
-  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => {
-      msg.innerHTML = "Message Sent Successfuly"
-      setTimeout(function(){
-        msg.innerHTML = "";
-      },3000)
-      form.reset();
-    })
-    .catch(error => console.error('Error!', error.message))
-    
-});
-
+function sendEmail() {
+  Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "bottest903@gmail.com",
+    Password : "1E6D3854EB128D13CD3E2F6CAE66F801FD30", 
+    To : 'sinchan1509@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New Contact Form Enquiry",
+    Body : "Name: " + document.getElementById("name").value 
+            + "<br>Email: " + document.getElementById("email").value 
+            + "<br>Subject: " + document.getElementById("subject").value
+            + "<br>Message: " + document.getElementById("message").value,
+  }).then(
+    message => alert("Message sent successfully")
+  );
+}
 
 const moveToTopBtn = document.getElementById('moveToTopBtn');
 // Function to show or hide the button based on scroll position

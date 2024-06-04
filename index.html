@@ -74,6 +74,9 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- Automatic Email Contact Form Details to owner's email address -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
     <!-- CSS File LinkUp -->
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -349,12 +352,11 @@
       </div>
     </div>
 
-    <!-- Start from here only this html part plus form javascript functionality needs to be worked -->
-    <!-- Rest done -->
     <!-- Contact Me Page -->
     <div id="contact">
       <div class="container">
         <div class="row">
+          <!-- Contact Links -->
           <div class="contact-leftside">
             <h1 class="subtitle">Contact Me</h1>
             <a
@@ -393,24 +395,39 @@
               ></a>
             </div>
           </div>
+          <!-- Contact Form -->
           <div class="contact-rightside">
             <form
-              name="submit-to-google-sheet"
-              action="index.html"
-              method="post"
+              id="contact-form"
+              onsubmit="sendEmail(); reset(); return false;"
             >
-              <input type="text" name="Name" placeholder="Your Name" required />
+              <input 
+                type="text" 
+                name="Name" 
+                placeholder="Your Name" 
+                required 
+              />
+
               <input
                 type="email"
                 name="Email"
                 placeholder="Your Email"
                 required
               />
+
+              <input
+                type="text"
+                name="Subject"
+                placeholder="Your Subject"
+                required
+              />
+
               <textarea
                 name="Message"
                 rows="6"
                 placeholder="Your Message"
               ></textarea>
+              
               <button type="submit" class="btn resbtn">Submit</button>
             </form>
             <span id="msg"></span>
@@ -425,9 +442,9 @@
       <div class="copyright">
         <p class="footer_title">Sinchan Roy!</p>
         <p class="foot">
-            <strong><i class="fa-regular fa-copyright"></i> 
-                Copyright 2024 | All rights reserved
-            </strong>
+          <strong><i class="fa-regular fa-copyright"></i> 
+            Copyright 2024 | All rights reserved
+          </strong>
         </p>
       </div>
     </div>
